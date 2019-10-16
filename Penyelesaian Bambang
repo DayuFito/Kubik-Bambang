@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+ namespace Toegazz
+ {
+ 	public class Program
+ 	{
+ 		public static void Main(string[] args)
+ 		{
+ 		Masalah:
+ 			Console.WriteLine("Bambang mempunyai air dengan vol 98 cm^3.");
+ 			Console.WriteLine("Masukkan nilainya:");
+ 			
+ 			Console.WriteLine("Masukkan Panjangnya:");
+ 			double p = Convert.ToInt32(Console.ReadLine());
+ 			Console.WriteLine("Masukkan Lebarnya:");
+ 			double l = Convert.ToInt32(Console.ReadLine());
+ 			Console.WriteLine("Masukkan Tingginya:");
+ 			double t = Convert.ToInt32(Console.ReadLine());
+ 			
+ 			double kubik = p * l * t;
+ 			string hasil;
+ 			if (kubik == 98)
+ 			{
+ 				hasil = "Air & Wadah Pas";
+ 			}
+ 			if (kubik < 98)
+ 			{
+ 				hasil = "Air Tumpah";
+ 			}
+ 			else
+ 			{
+ 				hasil = "Wadah tersisa tempat";
+ 			}
+ 			Console.WriteLine("Masukkan :");
+ 			Console.WriteLine("Panjang = " + p);
+ 			Console.WriteLine("Lebar = " + l);
+ 			Console.WriteLine("Tinggi = " + t);
+ 			Console.WriteLine("Maka, = " + hasil);
+ 			
+ 		}
+ 	}
+ }
